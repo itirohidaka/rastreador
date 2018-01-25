@@ -17,13 +17,13 @@ Sempre recomendo a atualização dos pacotes antes de iniciar:
 sudo apt-get update
 ```
 
-Instalar o pacote "ppp" através do comando abaixo:
+1. Instalar o pacote "ppp" através do comando abaixo:
 
 ```
 sudo apt-get install ppp
 ```
 
-Baixar o sakis3g para o Raspberry Pi:
+2. Baixar o sakis3g para o Raspberry Pi:
 
 ```
 wget "http://raspberry-at-home.com/files/sakis3g.tar.gz"
