@@ -28,7 +28,7 @@ sudo apt-get install ppp
 wget "http://raspberry-at-home.com/files/sakis3g.tar.gz"
 ```
 
-5. A sugestão aqui é copiar o sakis3g para o /usr/bin/modem3d e descompactá-lo:
+5. A sugestão aqui é copiar o sakis3g para o /usr/bin/modem3d e descompactá-lo com os seguintes comandos:
 
 ```
 sudo mkdir /usr/bin/modem3g
@@ -39,43 +39,22 @@ sudo tar -zxvf sakis3g.tar.gz
 sudo chmod +x sakis3g
 ```
 
-6.
+6. Modificar o arquivo /etc/sakis3g.conf com o parâmetro APN. No meu caso estou utilizando uma linha pré-paga da Vivo portanto:
 
 ```
-sudo ./sakis3g connect
-Please select APN by using APN variable, or by enabling interactive mode.
-        $ /usr/bin/modem3g/sakis3g --interactive "connect"
-
-Available options are:
-Internet         (Internet)
-CUSTOM_APN      Custom APN...
-
-Example:
-        $ /usr/bin/modem3g/sakis3g APN="Internet"
+APN="Vivo"
 ```
 
-7.
-
-```
-APN="Internet"
-```
-
-8.
+7. Para realizar a conexão com a internet basta utilizar o comando abaixo:
 
 ```
 sudo ./sakis3g connect
 E220 connected to PLAY (26006).
 ```
 
-9.
+8. Para desconectar basta utilizar o comando abaixo:
 
 ```
 sudo ./sakis3g disconnect
 Disconnected.
-```
-
-10.
-
-```
-/usr/bin/modem3g/sakis3g --interactive "menu" "console"
 ```
