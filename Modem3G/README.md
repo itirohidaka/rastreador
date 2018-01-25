@@ -16,3 +16,20 @@ Sempre recomendo a atualização dos pacotes antes de iniciar.
 ```
 sudo apt-get update
 ```
+
+```
+sudo apt-get install ppp
+```
+
+```
+wget "http://raspberry-at-home.com/files/sakis3g.tar.gz"
+```
+
+```
+sudo mkdir /usr/bin/modem3g
+sudo chmod 777 /usr/bin/modem3g
+sudo cp sakis3g.tar.gz /usr/bin/modem3g
+cd /usr/bin/modem3g
+sudo tar -zxvf sakis3g.tar.gz
+sudo chmod +x sakis3g
+```
